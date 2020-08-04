@@ -10,11 +10,14 @@ import pizzas from './data';
 function App() {
   return (
     <div>
+      <>
+      <Confirmation />
       <Container>
         <Row>
           <p>Hello there</p>
         </Row>
       </Container>
+      </>
     </div>
   );
 }
