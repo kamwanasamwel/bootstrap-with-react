@@ -10,16 +10,15 @@ export function PizzaCard({ data, setOrdered }) {
                     <Card.Title className="mb-0 font-weight-bold">
                         {data.name}
                     </Card.Title>
-                    <Badge pill className="mb-1" variant="warning">
+                    <Badge pill className="mb-1" bg="warning">
                     £{data.price}
                     </Badge>
                 </div>
                 <Card.Text className="text-secondary">{data.desc}</Card.Text>
                 <Button 
                     onClick={()=> setOrdered()}
-                    className="mt-auto font-weight-bold"
-                    variant="success"
-                    block>
+                    className="mt-auto font-weight-bold w-100"
+                    variant="success">
                         Order Pizza 🍕
                     </Button>
             </Card.Body>
