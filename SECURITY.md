@@ -56,6 +56,15 @@ All changes have been tested and verified:
 - ✅ All existing tests pass
 - ✅ Production build works correctly
 
+## Notes on Dependency Changes
+
+### TypeScript Version Alignment
+During the update process, TypeScript was aligned from 5.9.3 to 4.9.5. This is intentional and correct:
+- react-scripts@5.0.1 specifies TypeScript ^3.2.1 || ^4 as a peer dependency
+- TypeScript 4.9.5 is the latest stable version in the 4.x series
+- This alignment prevents potential compatibility issues with react-scripts
+- TypeScript 4.9.5 has no known security vulnerabilities
+
 ## Recommendations
 
 1. **For Development**: Be cautious when browsing external sites while the development server is running
